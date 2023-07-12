@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <div class="main">
+        <div class="titulo">Controle Financeiro</div>
+        <div class="entradas">Entradas
+            <table id="tabelaentrada">
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </table>
+            <div id="totalentradas"><p>Total de entradas:</p></div>
+            <input class="form" type="text" name="txtdesc" id="txtdesc" value="Descrição" onclick="value=''">
+            <input class="form" type="text" name="txtvalor" id="txtvalor" value="Valor" onclick="value=''">
+            <button class="adicionar" onclick="addValoresEntrada(txtdesc.value, txtvalor.value)">Adicionar</button>
+        </div>
+        <div class="saidas">Saídas
+            <table id="tabelasaida">
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </div>
+            </table>
+            <div id="totalsaidas"><p>Total de saídas:</p></div>
+            <input class="form" type="text" name="txtdesc_saida" id="txtdesc_saida" value="Descrição" onclick="value=''">
+            <input class="form" type="text" name="txtvalor_saida" id="txtvalor_saida" value="Valor" onclick="value=''">
+            <button class="adicionar" onclick="addValoresSaida(txtdesc_saida.value, txtvalor_saida.value)">Adicionar</button>
+        </div>
+        <div id="txtsaldo">
+            Saldo Total:
+        </div>
+    <script src="script.js"></script>   
+</body>
+</html>
